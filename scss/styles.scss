@@ -1,0 +1,105 @@
+@import "bootstrap"; 
+
+body {
+    background-image: url("/img/bg-main.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255);
+
+    #ascensor {
+        height: 101px;
+        width: 110px;
+        position: relative;
+        transition: top 2s ease-in-out;
+
+        img {
+            width: 100%;
+        } 
+    }
+
+    input {
+        border: 2px solid #000000;
+        outline: none;
+    }
+
+    .edificio {
+        width: 90%;
+        background: #ffffff;
+
+        .borde{
+            background-color: gray;
+        }
+        img {
+            height: 100px;
+            width: 100%;
+        }
+    }
+
+    .pisos {
+        height: 100px;
+    }
+
+    .panel {
+        background: linear-gradient(to top, #1e1b13, #41372b); 
+        display: flex;
+        border: solid 10px #a16136;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 2rem;
+
+        .pantalla{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            font-family: 'Old Standard TT', serif;
+            height: 80px;
+            margin-bottom: 2rem;
+            background: black;
+            color: rgb(243, 43, 43);
+            h2{
+                font-size: 3.5rem;
+                &.up{
+                    &::before{
+                        content: '▲';
+                    }
+                }
+                &.down{
+                    &::before{
+                        content: '▼';
+                    }
+                }
+            }
+        }
+        .botones{
+            display: flex;
+            flex-flow: row wrap;
+            
+            .contenedorBoton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                width: 50%;
+                button{
+                    margin-bottom: 1rem;
+                    border: solid 7px #a16136;
+                    background: #000000;
+                    width: 100px;
+                    min-width: 100px;
+                    height: 100px;
+                    font-family: 'Old Standard TT', serif;
+                    border-radius: 50%;
+                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                    color: rgb(236, 233, 233);
+                    &.active{
+                        box-shadow: 0 0 5px rgba(207, 207, 207, 0.377);
+                        border-color: rgb(255, 249, 249);
+                        color: rgb(255, 255, 255);
+                    }       
+                }
+            }
+        }       
+    }
+}

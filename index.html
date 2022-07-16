@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascensor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body >
+    <main>
+        <div id="contenido">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="mt-5">¡Bienvenido, suba por nuestro ascensor!</h1>
+                        <label class="mt-4"  for="numero" >¿Cuántos pisos necesita?</label>
+                        <input type="number"  id="numero">
+                        <button class="btn-danger btn mt-4" onclick="generarLayout()">Generar</button>
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/card-main.png" height="600px" alt="img-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sonido"></div>
+        <div id="sonidoBoton"></div>
+    </main>
+    <script src="./js/Boton.js"></script>
+    <script src="./js/Botonera.js"></script>
+    <script src="./js/Ascensor.js"></script>
+    <script src="./js/Edificio.js"></script>
+    <script src="./js/app.js"></script>   
+</body>
+</html>
